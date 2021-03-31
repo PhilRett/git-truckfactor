@@ -1,5 +1,5 @@
 Git-truckfactor
-===========
+===============
 Git-truckfactor is a library that assits in the analysis of git repositories. It allows for calculation of truckfactor scores and code contribution metrics.
 
 Installation
@@ -34,7 +34,39 @@ In addition git-truckfactor makes use of the ruby library Linguist. That means y
 Usage
 ===============
 
-See the `demo.ipynb </demo.ipynb>`_ file for examples on how to use git-truckfactor.
+The git-truckfactor package is intended to be used as a module.
+
+1. Import the module into the python environment::
+
+            import git_truckfactor
+
+2. Clone git repository
+
+    command:: 
+        
+            git_truckfactor.clone_repository(<github_repository_url>, <local_repository_path>)
+
+    example:: 
+        
+            git_truckfactor.clone_repository('https://github.com/pandas-dev/pandas.git', './github_repos/pandas')
+
+    returns: local_repository_path
+
+3. Calculate truckfactor
+
+    command::
+        
+            git_truckfactor.truck_factor_repo(<local_repository_path>, <cur_wd>, <start_date>, <end_date>)
+
+    example:: 
+    
+            cur_wd = os.getcwd()
+            git_truckfactor.truck_factor_repo('./github_repos/pandas', cur_wd, '2020-01-01', '2021-01-01')
+    
+    returns: truckfactor score + creates a directory 'truckfactor_results' with truck factor statistics stored in a CSV-file
+
+
+See the `demo.ipynb </demo.ipynb>`_ file for examples on how to use git-truckfactor for multiple repositories.
 
 License
 ===============
