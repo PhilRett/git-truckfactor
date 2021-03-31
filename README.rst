@@ -1,6 +1,8 @@
 Git-truckfactor
 ===============
-Git-truckfactor is a library that assits in the analysis of git repositories. It allows for calculation of truckfactor scores and code contribution metrics.
+Git-truckfactor is a library that assits in the analysis of git repositories. It allows for calculation of Truck Factor scores and code contribution metrics.
+
+The tool closely resembles the algorithm proposed by `Avelino et al. <https://arxiv.org/pdf/1604.06766.pdf>`_ to estimate the Truck Factor.
 
 Installation
 ===============
