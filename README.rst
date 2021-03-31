@@ -67,6 +67,3 @@ The git-truckfactor package is intended to be used as a module.
 
 
 See the `demo.ipynb </demo.ipynb>`_ file for examples on how to use git-truckfactor for multiple repositories.
-
-License
-===============
