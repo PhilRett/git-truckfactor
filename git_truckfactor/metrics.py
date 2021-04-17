@@ -6,6 +6,7 @@ import os
 import shlex
 import re
 import pandas as pd
+import plotly.graph_objects as go
 from datetime import datetime
 from pathlib import Path
 
