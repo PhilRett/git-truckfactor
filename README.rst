@@ -8,18 +8,7 @@ Installation
 ===============
 Get the latest version by running::
 
-    git clone https://github.com/PhilRett/git-truckfactor
-
-or::
-
-    git clone git@github.com:PhilRett/git-truckfactor.git
-
-
-After cloning the git repository switch to the root directory where the setup.py file is located and enter::
-
-    python setup.py install
-
-to install the package and its python dependencies.
+    pip install git-truckfactor
 
 Dependencies
 ------------

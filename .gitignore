@@ -2,3 +2,7 @@ github_repos
 truckfactor_results
 __pycache__/
 *.pyc
+build
+dist
+.vscode
+git_truckfactor.egg-info

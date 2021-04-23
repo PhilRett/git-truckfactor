@@ -22,13 +22,13 @@ setup(
     long_description=long_description,
     author='Philipp Rettig',
     author_email='ph.rettig13@gmail.com',
-    url='https://github.com/PhilRett/gitmetrics',
+    url='https://github.com/PhilRett/git-truckfactor',
     license='',
     packages=['git_truckfactor'],
     install_requires=['numpy', 'networkx'],
     include_package_data=True,
     classifiers=[   
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
         'Programming Language :: Python :: 3.9'],
     )
