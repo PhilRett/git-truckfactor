@@ -25,7 +25,7 @@ setup(
     url='https://github.com/PhilRett/git-truckfactor',
     license='',
     packages=['git_truckfactor'],
-    install_requires=['numpy', 'networkx'],
+    install_requires=['numpy', 'networkx', 'plotly'],
     include_package_data=True,
     classifiers=[   
         'Development Status :: 4 - Beta',

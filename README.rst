@@ -16,6 +16,7 @@ Git-truckfactor requires the following python libraries:
 
 * `NumPy <https://numpy.org>`_
 * `NetworkX <https://networkx.org>`_
+* `Plotly <https://plotly.com/>`_
 
 In addition git-truckfactor makes use of the ruby library Linguist. That means you will also need Ruby installed.
 

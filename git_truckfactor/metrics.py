@@ -29,8 +29,15 @@ def clone_repository(url_repo, path_to):
     destination = Path(path_to)
 
     if not destination.exists():
-        process = subprocess.run(git_cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True)
-        process #run the git command
+        count = 1
+        while count <= 3:
+            try:
+                process = subprocess.run(git_cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True)
+                process #run the git command
+                break
+            except:
+                count += 1
+                continue
 
     return path_to
 
